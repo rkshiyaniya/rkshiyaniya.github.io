@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .btn {
+    background: white;
+    color: #0073e6;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+section h2 {
+    color: #0073e6;
+}
+
+.job ul {
+    list-style: none;
+    padding: 0;
+}
+
+.job li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid span {
+    background: #0073e6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0073e6;
+    color: white;
+    margin-top: 20px;
+}
