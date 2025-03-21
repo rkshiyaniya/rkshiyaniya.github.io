@@ -12,31 +12,29 @@
 
     <header>
         <div class="container">
-            <h1>Rutvik Shiyaniya</h1>
-            <p>Software Engineer | Backend Developer | Cloud Enthusiast</p>
+            <h1 class="fade-in">Rutvik Shiyaniya</h1>
+            <p class="fade-in">Software Engineer | Backend Developer | Cloud Enthusiast</p>
             <a href="mailto:rkshiyaniya@gmail.com" class="btn">📩 Contact Me</a>
 
-            <!-- Dark Mode Toggle Button -->
-            <button id="dark-mode-toggle" class="dark-toggle">
-                🌙 Dark Mode
-            </button>
+            <!-- Dark Mode Toggle -->
+            <button id="dark-mode-toggle" class="dark-toggle">🌙 Dark Mode</button>
         </div>
     </header>
 
-    <section id="experience" class="container">
+    <section id="experience" class="container fade-in">
         <h2>💼 Experience</h2>
         <div class="job">
             <h3>HSBC Technology India</h3>
             <p><strong>Software Engineer</strong> | Hyderabad, India | August 2022 – Present</p>
             <ul>
-                <li>🚀 Designed scalable backend services, increasing efficiency by **35%**.</li>
-                <li>⚡ Optimized code performance, reducing defects by **50%**.</li>
+                <li>🚀 Developed scalable backend services, increasing efficiency by **35%**.</li>
+                <li>⚡ Optimized performance, reducing defects by **50%**.</li>
                 <li>🔒 Enhanced security, lowering vulnerabilities by **95%**.</li>
             </ul>
         </div>
     </section>
 
-    <section id="skills" class="container">
+    <section id="skills" class="container fade-in">
         <h2>🛠 Technical Skills</h2>
         <div class="skills-grid">
             <span>🐍 Python</span>
@@ -51,20 +49,21 @@
         </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2>📂 Projects</h2>
-        <div class="project">
-            <h3>Real-time Face Mask Detector</h3>
-            <p>🎭 A neural network-based mask detection system using **TensorFlow & OpenCV**.</p>
-            <a href="https://github.com/rkshiyaniya/face-mask-detector" target="_blank">🔗 View on GitHub</a>
-        </div>
-    </section>
+    <section id="contact" class="container fade-in">
+        <h2>📞 Contact Me</h2>
+        <form id="contact-form">
+            <label>Name:</label>
+            <input type="text" id="name" required>
 
-    <section id="contact" class="container">
-        <h2>📞 Contact</h2>
-        <p>📧 Email: <a href="mailto:rkshiyaniya@gmail.com">rkshiyaniya@gmail.com</a></p>
-        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/rkshiyaniya/" target="_blank">linkedin.com/in/rkshiyaniya</a></p>
-        <p>👨‍💻 GitHub: <a href="https://github.com/rkshiyaniya" target="_blank">github.com/rkshiyaniya</a></p>
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-status"></p>
     </section>
 
     <footer>
