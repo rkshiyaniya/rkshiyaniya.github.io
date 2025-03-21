@@ -24,4 +24,17 @@ document.addEventListener("DOMContentLoaded", function() {
     backToTop.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+    // Trigger skill bar animation on page load
+    setTimeout(() => {
+        document.querySelectorAll(".progress-bar").forEach(bar => {
+            bar.style.width = bar.classList.contains("python") ? "90%" :
+                             bar.classList.contains("java") ? "85%" :
+                             bar.classList.contains("javascript") ? "75%" :
+                             bar.classList.contains("sql") ? "80%" :
+                             bar.classList.contains("spring") ? "70%" :
+                             bar.classList.contains("gcp") ? "65%" :
+                             "75%";
+        });
+    }, 500);
 });
