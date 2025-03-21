@@ -1,44 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
     const toggleButton = document.getElementById("dark-mode-toggle");
     const body = document.body;
+    const backToTop = document.getElementById("back-to-top");
 
-    // Check for stored preference
     if (localStorage.getItem("darkMode") === "enabled") {
         body.classList.add("dark-mode");
-        toggleButton.textContent = "☀️ Light Mode";
     }
 
     toggleButton.addEventListener("click", function() {
         body.classList.toggle("dark-mode");
+        localStorage.setItem("darkMode", body.classList.contains("dark-mode") ? "enabled" : "disabled");
+    });
 
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "enabled");
-            toggleButton.textContent = "☀️ Light Mode";
+    // Scroll Event for Back to Top Button
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            backToTop.style.display = "block";
         } else {
-            localStorage.setItem("darkMode", "disabled");
-            toggleButton.textContent = "🌙 Dark Mode";
+            backToTop.style.display = "none";
         }
     });
 
-    // Contact Form Handling
-    const form = document.getElementById("contact-form");
-    const formStatus = document.getElementById("form-status");
-
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        // Simple validation
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-
-        if (name && email && message) {
-            formStatus.textContent = "✅ Message sent successfully!";
-            formStatus.style.color = "green";
-            form.reset();
-        } else {
-            formStatus.textContent = "❌ Please fill in all fields.";
-            formStatus.style.color = "red";
-        }
+    backToTop.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
