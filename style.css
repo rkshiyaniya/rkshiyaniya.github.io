@@ -54,19 +54,6 @@ body {
     color: yellow;
 }
 
-/* Skill Animations */
-.skill {
-    background: #0073e6;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-
-.skill:hover {
-    transform: scale(1.1);
-}
-
 /* Back to Top Button */
 #back-to-top {
     position: fixed;
@@ -81,8 +68,50 @@ body {
     display: none;
 }
 
-/* Dark Mode */
-.dark-mode {
-    background-color: #121212;
-    color: #f4f4f4;
+/* Skills Section */
+.skill-category {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
+
+.skill-category:hover {
+    transform: scale(1.02);
+}
+
+.skill-category h3 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #0073e6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+/* Dark Mode */
+.dark-mode .skill-category {
+    background: #1e1e1e;
+}
+
+.dark-mode .skill:hover {
+    background: #009688;
+}
+
