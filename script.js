@@ -19,4 +19,26 @@ document.addEventListener("DOMContentLoaded", function() {
             toggleButton.textContent = "🌙 Dark Mode";
         }
     });
+
+    // Contact Form Handling
+    const form = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Simple validation
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (name && email && message) {
+            formStatus.textContent = "✅ Message sent successfully!";
+            formStatus.style.color = "green";
+            form.reset();
+        } else {
+            formStatus.textContent = "❌ Please fill in all fields.";
+            formStatus.style.color = "red";
+        }
+    });
 });
