@@ -31,20 +31,12 @@ class Particle {
     }
 }
 
-function init() {
-    for (let i = 0; i < 30; i++) {
-        particles.push(new Particle());
-    }
-}
-
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-        p.update();
-        p.draw();
-    });
+    particles.forEach(p => p.update());
+    particles.forEach(p => p.draw());
     requestAnimationFrame(animate);
 }
 
-init();
+for (let i = 0; i < 30; i++) particles.push(new Particle());
 animate();

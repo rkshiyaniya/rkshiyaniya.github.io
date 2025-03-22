@@ -26,15 +26,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .right-half {
     flex: 1;
+    padding: 20px;
 }
 
 /* Hero Section */
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     background: linear-gradient(90deg, #ffcc00, #ff9900);
     -webkit-background-clip: text;
@@ -42,7 +44,7 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: goldenrod;
 }
 
@@ -81,7 +83,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .timeline-date {
@@ -90,18 +92,33 @@ body {
     color: goldenrod;
 }
 
-.timeline-dot {
-    width: 12px;
-    height: 12px;
+.timeline-line {
+    width: 3px;
+    height: 40px;
     background-color: goldenrod;
-    border-radius: 50%;
-    margin: 0 15px;
 }
 
 .timeline-content {
     font-size: 1rem;
     font-weight: bold;
     color: goldenrod;
+}
+
+/* Skills Section */
+.about {
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
 }
 
 /* Floating Shapes */
