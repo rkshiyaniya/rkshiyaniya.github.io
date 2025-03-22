@@ -6,32 +6,33 @@ body {
     background-color: black;
     font-family: 'Michroma', sans-serif;
     color: goldenrod;
-    overflow: hidden; /* Prevent scrolling */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    text-align: center;
+    overflow: hidden;
 }
 
-/* Main container to hold both sections */
+/* Layout */
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 90%;
     height: 90vh;
-    position: relative;
-    z-index: 2;
 }
 
-/* HERO SECTION */
-.hero {
+/* Left and Right Halves */
+.left-half {
     flex: 1;
-    text-align: left;
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.right-half {
+    flex: 1;
+}
+
+/* Hero Section */
 .hero-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -49,102 +50,27 @@ body {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    font-size: 1rem;
     text-decoration: none;
     color: black;
     background: linear-gradient(90deg, #ffcc00, #ff9900);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
-    transition: all 0.3s ease-in-out;
 }
 
-.resume-btn:hover {
-    box-shadow: 0 0 20px rgba(255, 204, 0, 1);
-    transform: scale(1.05);
+/* Experience Section */
+.experience {
+    text-align: left;
 }
 
-.about {
-    flex: 1;
-    text-align: center;
-    max-width: 50%;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, #ffcc00, #ff9900);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-}
-
-/* Skills Section - Each Category */
-.skills-category {
-    margin-bottom: 25px;
-}
-
-.skills-category h3 {
+.company-name {
     font-size: 1.2rem;
+    font-weight: bold;
     color: goldenrod;
     margin-bottom: 10px;
-    border-bottom: 2px solid goldenrod;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Skill Icons Grid */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.skill img {
-    width: 60px;
-    height: 60px;
-    filter: drop-shadow(0px 0px 10px rgba(255, 204, 0, 0.7));
-}
-
-.skill p {
-    font-size: 0.9rem;
-    margin-top: 5px;
-    color: goldenrod;
-}
-
-.skill:hover {
-    transform: scale(1.1);
-}
-
-/* BACKGROUND ANIMATION */
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.experience {
-    flex: 1;
-    text-align: center;
-    max-width: 50%;
 }
 
 .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-    margin-top: 20px;
 }
 
 .timeline::before {
@@ -154,59 +80,42 @@ canvas {
     background-color: goldenrod;
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
 }
 
 .timeline-item {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 30px;
-    position: relative;
+    margin-bottom: 15px;
 }
 
 .timeline-date {
-    font-size: 1rem;
-    font-weight: bold;
-    color: goldenrod;
-    width: 120px;
+    width: 20%;
     text-align: right;
-    padding-right: 20px;
+    color: goldenrod;
 }
 
 .timeline-content {
-    background: rgba(255, 204, 0, 0.1);
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1px solid goldenrod;
-    text-align: left;
-    width: 60%;
-    position: relative;
-}
-
-.timeline-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: goldenrod;
-}
-
-.timeline-content h4 {
     font-size: 1rem;
-    color: white;
-    margin: 0;
+    font-weight: bold;
+    color: goldenrod;
+    margin-left: 20px;
 }
 
-/* Timeline Circle */
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: goldenrod;
-    border-radius: 50%;
-    left: calc(50% - 6px);
-    top: 50%;
-    transform: translateY(-50%);
+/* Skills Section */
+.about {
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
 }
