@@ -132,3 +132,81 @@ canvas {
     height: 100%;
     z-index: 1;
 }
+
+.experience {
+    flex: 1;
+    text-align: center;
+    max-width: 50%;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: goldenrod;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: goldenrod;
+    width: 120px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.timeline-content {
+    background: rgba(255, 204, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid goldenrod;
+    text-align: left;
+    width: 60%;
+    position: relative;
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: goldenrod;
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+}
+
+/* Timeline Circle */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    left: calc(50% - 6px);
+    top: 50%;
+    transform: translateY(-50%);
+}
