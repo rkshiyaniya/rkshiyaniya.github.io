@@ -3,67 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rutvik Shiyaniya - Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Rutvik Shiyaniya | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <h2 class="logo">Rutvik Shiyaniya</h2>
-        <ul class="nav-links">
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="dark-mode-toggle" class="dark-toggle">🌙</button>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1 class="fade-in">Hello, I'm <span class="highlight">Rutvik</span></h1>
-            <p class="fade-in">Software Engineer | Backend Developer | Cloud Enthusiast</p>
-            <a href="mailto:rkshiyaniya@gmail.com" class="btn hire-btn">🚀 Hire Me</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Rutvik Shiyaniya</h1>
+            <h2 class="hero-subtitle">Software Engineer</h2>
+            <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
         </div>
-    </header>
-
-    <!-- Experience Section -->
-    <section id="experience" class="container fade-in">
-        <h2>💼 Experience</h2>
-        <div class="job">
-            <h3>HSBC Technology India</h3>
-            <p><strong>Software Engineer</strong> | Hyderabad, India | August 2022 – Present</p>
-            <ul>
-                <li>🚀 Developed scalable backend services, increasing efficiency by **35%**.</li>
-                <li>⚡ Optimized performance, reducing defects by **50%**.</li>
-                <li>🔒 Enhanced security, lowering vulnerabilities by **95%**.</li>
-            </ul>
+        <div class="avatar">
+            <img src="avatar-placeholder.png" alt="Avatar">
         </div>
     </section>
-
-    <!-- Skills Section with Animated Progress Bars -->
-    <section id="skills" class="container fade-in">
-        <h2>🛠 Technical Skills</h2>
-        
-        <div class="skill-bar"><span>🐍 Python</span><div class="progress"><div class="progress-bar python"></div></div></div>
-        <div class="skill-bar"><span>☕ Java</span><div class="progress"><div class="progress-bar java"></div></div></div>
-        <div class="skill-bar"><span>📜 JavaScript</span><div class="progress"><div class="progress-bar javascript"></div></div></div>
-        <div class="skill-bar"><span>💾 SQL</span><div class="progress"><div class="progress-bar sql"></div></div></div>
-        <div class="skill-bar"><span>🛠 Spring Boot</span><div class="progress"><div class="progress-bar spring"></div></div></div>
-        <div class="skill-bar"><span>☁️ Google Cloud Platform</span><div class="progress"><div class="progress-bar gcp"></div></div></div>
-        <div class="skill-bar"><span>🗄️ PostgreSQL</span><div class="progress"><div class="progress-bar postgres"></div></div></div>
-    </section>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top">⬆️</button>
-
-    <footer>
-        <p>© 2024 Rutvik Shiyaniya | Built with ❤️</p>
-    </footer>
-
+    <canvas id="background"></canvas>
+    <script src="script.js"></script>
 </body>
 </html>
