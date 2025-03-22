@@ -71,3 +71,50 @@ canvas {
     height: 100%;
     z-index: 1;
 }
+
+.about {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffcc00, #ff9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 204, 0, 0.7));
+}
+
+.skill p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: goldenrod;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
