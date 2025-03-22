@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="background"></canvas>
+
     <div class="container">
         <!-- LEFT HALF -->
         <div class="left-half">
-            <!-- HERO SECTION (Upper Left) -->
+            <!-- HERO SECTION -->
             <section class="hero">
                 <div class="hero-content">
                     <h1 class="hero-title">Rutvik Shiyaniya</h1>
@@ -19,24 +21,27 @@
                 </div>
             </section>
 
-            <!-- EXPERIENCE SECTION (Lower Left) -->
+            <!-- EXPERIENCE SECTION -->
             <section class="experience">
                 <h2 class="section-title">Experience</h2>
                 <h3 class="company-name">HSBC Technology India</h3>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">Aug 2022</div>
-                        <div class="timeline-content">Trainee Software Engineer</div>
+                        <div class="timeline-date">April 2025</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">Senior Software Engineer</div>
                     </div>
                     
                     <div class="timeline-item">
                         <div class="timeline-date">Feb 2023</div>
+                        <div class="timeline-dot"></div>
                         <div class="timeline-content">Software Engineer</div>
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-date">April 2025</div>
-                        <div class="timeline-content">Senior Software Engineer</div>
+                        <div class="timeline-date">Aug 2022</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">Trainee Software Engineer</div>
                     </div>
                 </div>
             </section>
@@ -44,54 +49,30 @@
 
         <!-- RIGHT HALF -->
         <div class="right-half">
-            <!-- SKILLS SECTION -->
             <section class="about">
                 <h2 class="section-title">Technical Skills</h2>
-
                 <div class="skills-category">
                     <h3>Programming Languages</h3>
                     <div class="skills-grid">
                         <div class="skill"><img src="icons/python.svg" alt="Python"><p>Python</p></div>
                         <div class="skill"><img src="icons/java.svg" alt="Java"><p>Java</p></div>
                         <div class="skill"><img src="icons/sql.svg" alt="SQL"><p>SQL</p></div>
-                        <!-- <div class="skill"><img src="icons/plsql.svg" alt="PL/SQL"><p>PL/SQL</p></div> -->
+                        <div class="skill"><img src="icons/plsql.svg" alt="PL/SQL"><p>PL/SQL</p></div>
                     </div>
                 </div>
 
                 <div class="skills-category">
                     <h3>Frameworks & Libraries</h3>
                     <div class="skills-grid">
-                        <!-- <div class="skill"><img src="icons/spring.svg" alt="Spring"><p>Spring Framework</p></div> -->
+                        <div class="skill"><img src="icons/spring.svg" alt="Spring"><p>Spring Framework</p></div>
                         <div class="skill"><img src="icons/springboot.svg" alt="Spring Boot"><p>Spring Boot</p></div>
                         <div class="skill"><img src="icons/tensorflow.svg" alt="TensorFlow"><p>TensorFlow</p></div>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Databases</h3>
-                    <div class="skills-grid">
-                        <div class="skill"><img src="icons/postgresql.svg" alt="PostgreSQL"><p>PostgreSQL</p></div>
-                        <!-- <div class="skill"><img src="icons/mysql.svg" alt="MySQL"><p>MySQL</p></div> -->
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Cloud Platform</h3>
-                    <div class="skills-grid">
-                        <div class="skill"><img src="icons/gcp.svg" alt="GCP"><p>Google Cloud Platform</p></div>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Developer Tools</h3>
-                    <div class="skills-grid">
-                        <div class="skill"><img src="icons/git.svg" alt="Git"><p>Git</p></div>
-                        <!-- <div class="skill"><img src="icons/maven.svg" alt="Maven"><p>Maven</p></div> -->
-                        <div class="skill"><img src="icons/jenkins.svg" alt="Jenkins"><p>Jenkins</p></div>
                     </div>
                 </div>
             </section>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
