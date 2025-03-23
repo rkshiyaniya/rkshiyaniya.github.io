@@ -4,7 +4,8 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const symbols = ['{ }', '< />', '0', '1', 'function()', 'if()', '=>', 'while()', '</>', 'C++', 'Python'];
+const symbols = ['{ }', '< />', '0', '1', 'Java', 'Python'];
+// const symbols = [''];
 const particles = [];
 
 class Particle {
